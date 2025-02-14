@@ -9,9 +9,9 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
+    { name: "Home", path: "#" },
     { name: "Technology", path: "#technology" },
     { name: "Features", path: "#features" },
-    
     { name: "Agents", path: "#agents" },
     { name: "Pricing", path: "#pricing" },
     { name: "Contact", path: "#contact" },
@@ -52,18 +52,18 @@ function Navbar() {
       {isOpen && (
         <>
           <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40" onClick={() => setIsOpen(false)} />
-          <div className="fixed top-0 right-0 h-full w-80 opacity-90 bg-gray-900 text-white p-6 flex flex-col z-50 shadow-lg">
+          <div className="fixed top-0 right-0 h-full w-80 opacity-90 bg-gray-900 text-white p-6 flex flex-col z-50 shadow-lg border border-l-2 border-teal-500">
             {/* Close Button */}
             <button
-              className="self-end text-3xl hover:text-gray-400 transition"
+              className="self-end text-3xl text-teal-500 hover:text-purple-400 transition"
               onClick={() => setIsOpen(false)}
               aria-label="Close menu"
             >
               <IoMdClose />
             </button>
 
-            {/* Mobile Navigation Links with Hover Effect */}
-            <nav className="flex flex-col space-y-6 mt-8 text-lg">
+            {/* Mobile Navigation Links */}
+            <nav className="flex flex-col space-y-6 mt-8 text-lg flex-grow">
               {navLinks.map(({ name, path }) => (
                 <Link
                   key={name}
@@ -72,12 +72,22 @@ function Navbar() {
                   onClick={() => setIsOpen(false)}
                 >
                   <span className="opacity-0 translate-x-[-10px] group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
-                    <BsRobot size={25} className="text-purple-400" />
+                    <BsRobot size={25} className="text-teal-400" />
                   </span>
-                  <span className="group-hover:text-purple-400 transition-all duration-300">{name}</span>
+                  <span className="group-hover:text-teal-400  transition-all duration-300">{name}</span>
                 </Link>
               ))}
             </nav>
+
+            {/* Move Button to Bottom */}
+            <div className="mt-auto ">
+              <Link
+                href="#contact"
+                className="w-full text-center bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500 px-16  py-3 rounded-full text-white font-semibold hover:scale-105 transition-transform"
+              >
+                Launch Console
+              </Link>
+            </div>
           </div>
         </>
       )}
