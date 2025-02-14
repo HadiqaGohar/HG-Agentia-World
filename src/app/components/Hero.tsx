@@ -10,13 +10,13 @@ const Hero = () => {
     <section className="flex flex-col items-center justify-center min-h-screen px-4 text-center bg-black text-white">
       {/* Top Badge */}
       <div className="bg-gray-800 text-xs px-4 py-1 rounded-full flex items-center space-x-2">
-        <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+        <span className="w-2 h-2 bg-teal-500 rounded-full"></span>
         <span className="text-gray-300">POWERED BY PANAVERSITY</span>
       </div>
 
       {/* Main Heading */}
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mt-4">
-        <span className="bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">
+        <span className="bg-gradient-to-r from-purple-500 to-teal-500 text-transparent bg-clip-text">
           Enterprise AI Agents
         </span>
       </h1>
@@ -56,7 +56,7 @@ const Hero = () => {
         {/* Primary Button */}
         <Link
           href="#"
-          className="relative flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 to-blue-500 px-6 py-3 rounded-full text-white font-semibold overflow-hidden hover:scale-105 transition-transform"
+          className="relative flex items-center justify-center gap-2 bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500 px-6 py-3 rounded-full text-white font-semibold overflow-hidden hover:scale-105 transition-transform"
         >
           <p>Deploy Your AI Agent</p> <FaChevronRight />
           <span className="absolute inset-0 w-full h-full bg-white opacity-20 blur-md transform -translate-x-full hover:translate-x-full transition-all duration-700 ease-in-out"></span>

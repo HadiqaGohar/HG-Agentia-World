@@ -10,7 +10,7 @@ const aiAgents = [
 const AIAgents = () => {
   return (
     <div className="text-center py-10 bg-black text-white">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500 ">
         AI Agents
       </h2>
       <p className="text-gray-400 mt-2">Empowering industries with intelligent AI-driven agents</p>
@@ -22,7 +22,7 @@ const AIAgents = () => {
             key={index}
             className="w-72 p-6 bg-[#111] text-left  hover:scale-105 rounded-lg shadow-lg border border-gray-800 hover:border-purple-500 transition-all duration-300"
           >
-            <div className="flex  justify-center items-center w-14 h-14 mr-auto rounded-lg bg-gradient-to-r from-purple-500 to-blue-500">
+            <div className="flex  justify-center items-center w-14 h-14 mr-auto rounded-lg bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500 ">
               {agent.icon}
             </div>
             <h3 className="text-xl font-semibold mt-4">{agent.title}</h3>

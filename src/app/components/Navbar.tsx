@@ -34,9 +34,9 @@ function Navbar() {
       {/* CTA Button (Desktop) */}
       <Link
         href="#contact"
-        className="hidden md:flex bg-gradient-to-r from-purple-500 to-blue-500 px-5 py-2 rounded-full text-white font-semibold hover:scale-105 transition-transform"
+        className="hidden md:flex bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500  px-5 py-2 rounded-full text-white font-semibold hover:scale-105 transition-transform"
       >
-        Contact Us
+        Launch Console
       </Link>
 
       {/* Mobile Menu Button */}

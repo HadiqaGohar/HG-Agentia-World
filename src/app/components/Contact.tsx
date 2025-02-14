@@ -4,7 +4,7 @@ export default function ContactSection() {
   return (
     <section className="bg-black text-white py-16 px-8">
          <div className="text-center mb-12">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl  my-3 font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl  my-3 font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500">
                 Get in Touch
                 </h2>
                 <p className="text-gray-400 max-w-xl mx-auto">
@@ -16,11 +16,11 @@ export default function ContactSection() {
         <div>
           <h2 className="text-xl sm:text-2xl md:text-3xl  font-bold mb-4 text-white">Contact Information</h2>
           <div className="space-y-4">
-            <div className="flex items-center gap-3 text-purple-400">
+            <div className="flex items-center gap-3 text-teal-400">
               <FaEnvelope />
               <span>contact@agentiaworld.com</span>
             </div>
-            <div className="flex items-center gap-3 text-purple-400">
+            <div className="flex items-center gap-3 text-blue-400">
               <FaGlobe />
               <span>www.agentiaworld.com</span>
             </div>
@@ -64,7 +64,7 @@ export default function ContactSection() {
             ></textarea>
             <button
               type="submit"
-              className="w-full py-3 rounded-lg text-white text-lg font-semibold bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600"
+              className="w-full py-3 rounded-lg text-white text-lg font-semibold bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500"
             >
               Send Message
             </button>

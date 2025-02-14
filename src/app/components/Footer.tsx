@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <h2 className="text-white text-lg font-semibold flex items-center gap-2">
-            <span className="text-purple-500 text-xl gap-2"><BsRobot size={25} className="text-purple-500" /></span> Agentia World
+            <span className="text-purple-500 text-xl gap-2"><BsRobot size={25} className="text-teal-500" /></span> Agentia World
           </h2>
           <p className="mt-2 text-sm">
             Next-generation AI agents powering the future of enterprise intelligence.
