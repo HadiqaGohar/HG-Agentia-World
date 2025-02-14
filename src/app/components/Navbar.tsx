@@ -1,0 +1,87 @@
+"use client";
+import Link from "next/link";
+import React, { useState } from "react";
+import { CgMenuRight } from "react-icons/cg";
+import { IoMdClose } from "react-icons/io";
+import { BsRobot } from "react-icons/bs";
+
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <header className="bg-black py-2 px-6 flex gap-8 justify-between items-center relative">
+    
+      {/* Desktop Navigation */}
+      <nav className="hidden md:flex space-x-8 text-gray-300">
+        {["Features", "Technology", "Agents", "Pricing", "Contact"].map((item) => (
+          <div key={item} className="group flex flex-col items-center">
+            <Link href="#" className="hover:text-white transition duration-300">
+              {item}
+            </Link>
+            <hr className="w-0 group-hover:w-full border-b border-purple-500 transition-all duration-300" />
+          </div>
+        ))}
+      </nav>
+
+      {/* CTA Button (Desktop) */}
+      <Link
+        href="#"
+        className="hidden md:flex bg-gradient-to-r from-purple-500 to-blue-500 px-5 py-2 rounded-full text-white font-semibold hover:scale-105 transition-transform"
+      >
+        Launch Console
+      </Link>
+
+      {/* Mobile Menu Button */}
+      <button
+        className="md:hidden text-white focus:outline-none"
+        onClick={() => setIsOpen(true)}
+        aria-label="Open menu"
+      >
+        <CgMenuRight size={28} />
+      </button>
+
+      {/* Mobile Sidebar */}
+      {isOpen && (
+        <>
+          <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40" onClick={() => setIsOpen(false)} />
+          <div className="fixed top-0 right-0 h-full w-80 opacity-90 bg-gray-900 text-white p-6 flex flex-col z-50 shadow-lg">
+            {/* Close Button */}
+            <button
+              className="self-end text-3xl hover:text-gray-400 transition"
+              onClick={() => setIsOpen(false)}
+              aria-label="Close menu"
+            >
+              <IoMdClose />
+            </button>
+
+            {/* Mobile Navigation Links with Hover Effect */}
+            <nav className="flex flex-col space-y-6 mt-8 text-lg">
+              {["Features", "Technology", "Agents", "Pricing", "Contact"].map((item) => (
+                <Link
+                  key={item}
+                  href="#"
+                  className="flex space-x-2 items-center gap-2 text-white group transition"
+                >
+                  <span className="opacity-0 translate-x-[-10px] group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                    <BsRobot size={25} className="text-purple-400" />
+                  </span>
+                  <span className="group-hover:text-purple-400 transition-all duration-300">{item}</span>
+                </Link>
+              ))}
+            </nav>
+
+            {/* CTA Button (Mobile) */}
+            <Link
+              href="#"
+              className="mt-auto bg-gradient-to-r from-purple-500 to-blue-500 px-5 py-3 rounded-full text-center text-white font-semibold hover:scale-105 transition-transform"
+            >
+              Launch Console
+            </Link>
+          </div>
+        </>
+      )}
+    </header>
+  );
+}
+
+export default Navbar;
