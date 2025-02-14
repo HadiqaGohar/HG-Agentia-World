@@ -4,7 +4,7 @@ const Pricing = () => {
     return (
         <div className="bg-black text-white py-16 px-4 ">
             <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
                     Choose Your Plan
                 </h2>
                 <p className="text-gray-400 max-w-xl mx-auto">

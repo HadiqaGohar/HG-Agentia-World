@@ -4,7 +4,7 @@ export default function ContactSection() {
   return (
     <section className="bg-black text-white py-16 px-8">
          <div className="text-center mb-12">
-                <h2 className="text-4xl my-3 font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl  my-3 font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
                 Get in Touch
                 </h2>
                 <p className="text-gray-400 max-w-xl mx-auto">
@@ -14,7 +14,7 @@ export default function ContactSection() {
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Left Side - Contact Information */}
         <div>
-          <h2 className="text-3xl font-bold mb-4 text-white">Contact Information</h2>
+          <h2 className="text-xl sm:text-2xl md:text-3xl  font-bold mb-4 text-white">Contact Information</h2>
           <div className="space-y-4">
             <div className="flex items-center gap-3 text-purple-400">
               <FaEnvelope />

@@ -12,7 +12,7 @@ const technologies = [
 const TechnologySection = () => {
   return (
     <div className="text-center py-10 bg-black text-white">
-      <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
         Powered by Advanced AI
       </h2>
       <p className="text-gray-400 mt-2">Built on cutting-edge neural architectures</p>

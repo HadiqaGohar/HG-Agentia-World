@@ -10,7 +10,7 @@ const aiAgents = [
 const AIAgents = () => {
   return (
     <div className="text-center py-10 bg-black text-white">
-      <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
         AI Agents
       </h2>
       <p className="text-gray-400 mt-2">Empowering industries with intelligent AI-driven agents</p>

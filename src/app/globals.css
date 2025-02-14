@@ -8,3 +8,7 @@
 .technology-card:hover {
   transform: rotateY(30deg);
 }
+
+html {
+  scroll-behavior: smooth;
+}

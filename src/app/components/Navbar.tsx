@@ -8,15 +8,23 @@ import { BsRobot } from "react-icons/bs";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navLinks = [
+    { name: "Technology", path: "#technology" },
+    { name: "Features", path: "#features" },
+    
+    { name: "Agents", path: "#agents" },
+    { name: "Pricing", path: "#pricing" },
+    { name: "Contact", path: "#contact" },
+  ];
+
   return (
     <header className="bg-black py-2 px-6 flex gap-8 justify-between items-center relative">
-    
       {/* Desktop Navigation */}
       <nav className="hidden md:flex space-x-8 text-gray-300">
-        {["Features", "Technology", "Agents", "Pricing", "Contact"].map((item) => (
-          <div key={item} className="group flex flex-col items-center">
-            <Link href="#" className="hover:text-white transition duration-300">
-              {item}
+        {navLinks.map(({ name, path }) => (
+          <div key={name} className="group flex flex-col items-center">
+            <Link href={path} className="hover:text-white transition duration-300">
+              {name}
             </Link>
             <hr className="w-0 group-hover:w-full border-b border-purple-500 transition-all duration-300" />
           </div>
@@ -25,10 +33,10 @@ function Navbar() {
 
       {/* CTA Button (Desktop) */}
       <Link
-        href="#"
+        href="#contact"
         className="hidden md:flex bg-gradient-to-r from-purple-500 to-blue-500 px-5 py-2 rounded-full text-white font-semibold hover:scale-105 transition-transform"
       >
-        Launch Console
+        Contact Us
       </Link>
 
       {/* Mobile Menu Button */}
@@ -56,27 +64,20 @@ function Navbar() {
 
             {/* Mobile Navigation Links with Hover Effect */}
             <nav className="flex flex-col space-y-6 mt-8 text-lg">
-              {["Features", "Technology", "Agents", "Pricing", "Contact"].map((item) => (
+              {navLinks.map(({ name, path }) => (
                 <Link
-                  key={item}
-                  href="#"
+                  key={name}
+                  href={path}
                   className="flex space-x-2 items-center gap-2 text-white group transition"
+                  onClick={() => setIsOpen(false)}
                 >
                   <span className="opacity-0 translate-x-[-10px] group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
                     <BsRobot size={25} className="text-purple-400" />
                   </span>
-                  <span className="group-hover:text-purple-400 transition-all duration-300">{item}</span>
+                  <span className="group-hover:text-purple-400 transition-all duration-300">{name}</span>
                 </Link>
               ))}
             </nav>
-
-            {/* CTA Button (Mobile) */}
-            <Link
-              href="#"
-              className="mt-auto bg-gradient-to-r from-purple-500 to-blue-500 px-5 py-3 rounded-full text-center text-white font-semibold hover:scale-105 transition-transform"
-            >
-              Launch Console
-            </Link>
           </div>
         </>
       )}

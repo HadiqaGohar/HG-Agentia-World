@@ -10,13 +10,13 @@ import Footer from './components/Footer'
 function Home() {
   return (
     <div>
-      <Hero/>
-      <TechnologySection/>
-      <Features/>
-      <AIAgents/>
-      <Pricing/>
-      <ContactSection/>
-      <Footer/>
+      <Hero />
+      <div id="technology"><TechnologySection /></div>
+      <div id="features"><Features /></div>
+      <div id="agents"><AIAgents /></div>
+      <div id="pricing"><Pricing /></div>
+      <div id="contact"><ContactSection /></div>
+      {/* <Footer /> */}
     </div>
   )
 }
