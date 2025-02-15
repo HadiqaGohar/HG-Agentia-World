@@ -5,6 +5,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
+
 .technology-card:hover {
   transform: rotateY(30deg);
 }

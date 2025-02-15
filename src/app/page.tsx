@@ -5,7 +5,7 @@ import Features from './components/Features'
 import AIAgents from './components/AiAgents'
 import Pricing from './components/Pricing'
 import ContactSection from './components/Contact'
-import Footer from './components/Footer'
+
 
 function Home() {
   return (

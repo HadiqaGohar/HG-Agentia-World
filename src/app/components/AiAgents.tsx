@@ -19,6 +19,7 @@ const AIAgents = () => {
       <div className="mt-8 flex justify-center gap-6 flex-wrap">
         {aiAgents.map((agent, index) => (
           <div
+          
             key={index}
             className="w-72 p-6 bg-[#111] text-left  hover:scale-105 rounded-lg shadow-lg border border-gray-800 hover:border-purple-500 transition-all duration-300"
           >

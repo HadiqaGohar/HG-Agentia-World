@@ -7,6 +7,7 @@ function Logo() {
       {/* Robot Icon */}
       <BsRobot size={25} className="text-teal-500" />
 
+
       {/* Gradient Logo Text (Starts White, Transitions to Gradient) */}
       <h1 className="text-white bg-gradient-to-r from-white via-purple-500 to-teal-500 bg-clip-text text-transparent text-lg font-semibold">
         Agentia World

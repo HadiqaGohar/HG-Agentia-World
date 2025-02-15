@@ -12,6 +12,7 @@ export default function Footer() {
           <p className="mt-2 text-sm">
             Next-generation AI agents powering the future of enterprise intelligence.
           </p>
+          
           <div className="flex gap-3 mt-3">
             <FaGithub className="text-xl cursor-pointer hover:text-white" />
             <FaLinkedin className="text-xl cursor-pointer hover:text-white" />

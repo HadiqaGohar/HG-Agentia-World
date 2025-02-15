@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description: "Enterprise AI Agents for the Future",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{

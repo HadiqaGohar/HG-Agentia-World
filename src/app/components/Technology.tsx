@@ -9,6 +9,7 @@ const technologies = [
   { title: "Global Scale", description: "Distributed AI processing across global networks", icon: <FaGlobe size={30} /> },
 ];
 
+
 const TechnologySection = () => {
   return (
     <div className="text-center py-10 bg-black text-white">

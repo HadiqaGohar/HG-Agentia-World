@@ -19,6 +19,7 @@ const Features = () => {
 
       {/* Cards */}
       <div className="mt-8 flex justify-center gap-6 flex-wrap">
+        
         {neuralCapabilities.map((feature, index) => (
           <motion.div
             key={index}

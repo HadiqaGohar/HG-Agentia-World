@@ -50,6 +50,7 @@ const Hero = () => {
           />
         </div>
       </div>
+      
 
       {/* Buttons */}
       <div className="mt-6 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full max-w-md">

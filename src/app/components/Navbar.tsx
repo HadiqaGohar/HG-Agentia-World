@@ -51,6 +51,7 @@ function Navbar() {
       {/* Mobile Sidebar */}
       {isOpen && (
         <>
+        
           <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40" onClick={() => setIsOpen(false)} />
           <div className="fixed top-0 right-0 h-full w-80 opacity-90 bg-gray-900 text-white p-6 flex flex-col z-50 shadow-lg border border-l-2 border-teal-500">
             {/* Close Button */}

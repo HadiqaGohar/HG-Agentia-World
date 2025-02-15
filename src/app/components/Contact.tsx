@@ -10,6 +10,7 @@ export default function ContactSection() {
                 <p className="text-gray-400 max-w-xl mx-auto">
                 Ready to transform your business with AI?
                 </p>
+                
             </div>
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Left Side - Contact Information */}
